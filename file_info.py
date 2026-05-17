@@ -62,7 +62,7 @@ class FileGroup:
         with open(self.output_filename, 'w', encoding='utf-8') as file:
             file.write(filenames_str)
 
-    def move_file_list(self):
+    def move_file_list(self, mode: int) -> int:
         """Outputs all files in file group to a newly created directory."""
         end_index = self.output_filename.find('_list')
         new_dir_name = self.output_filename[:end_index] + 's'
@@ -77,12 +77,21 @@ class FileGroup:
             new_dir_file = os.path.join(new_dir_path, filename)
 
             try:
-                shutil.move(cwd_file, new_dir_file)
+                if mode == 0:
+                    shutil.move(cwd_file, new_dir_file)
+                elif mode == 1:
+                    shutil.copy2(cwd_file, new_dir_file)
+
                 count += 1
             except PermissionError:
                 print(f"\tSkipped (due to permission denied): {os.path.basename(cwd_file)}")
 
-        print(f'Moved {count} files to {new_dir_name}!')
+        if mode == 0:
+            print(f'Copied {count} files to {new_dir_name} from {cwd}!')
+        elif mode == 1:
+            print(f'Moved {count} files to {new_dir_name} from {cwd}!')
+
+        return count
 
 compressed_file_group = FileGroup(
     FileExtensionGroup(
