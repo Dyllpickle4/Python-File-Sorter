@@ -63,7 +63,7 @@ def move_dir_files(dir: str, mode: int):
     print(f"Couldn't move: {misc_filenames}")
 
 def handle_sorting(dir: str, mode_list_result):
-    """Handle the various sorting mode conditions."""
+    """Handles the various sorting mode conditions."""
     if mode_list_result != ():
         print_dir_files(dir)
         if mode_list_result[0] <= 1:
@@ -72,7 +72,7 @@ def handle_sorting(dir: str, mode_list_result):
         print("Please select a mode first.")
 
 def handle_gui():
-    """Handle the graphical user interface window of the sorting system."""
+    """Handles the graphical user interface window of the sorting system."""
     sort = lambda: handle_sorting(dir_path.get(), mode_list.curselection())
 
     window_root = Tk()
