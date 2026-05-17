@@ -8,7 +8,7 @@ The script will attempt to sort any files of a current working directory based o
 To run this script, simply run the `file_sorter.py` with the argument of `<path_to_dir_to_sort>`. This would look like `python file_sorter.py C:\Users\example_user\Downloads` for a Windows system.<br><br>
 
 ## What is the output?
-As stated, this program outputs all files moved, or sorted, into new directories relating to their extention. They are grouped in format `<description> (<new_dir_name>)`, as follows:
+As stated, this program outputs all files moved, or sorted, into new directories relating to their extension, along with a "moved_lists" directory that contains a log of all moved files. These new directories are grouped in format `<description> (<new_dir_name>)`, as follows:
 * **Compressed Files (compressed_files)**: 
     * .zip
     * .gz
