@@ -2,7 +2,7 @@
 This project is a basic file sorter script in Python. It uses only the Python Standard Library and, as such, can be used after installing [Python](https://www.python.org/) itself.<br><br>
 
 ## What does this do?
-The script will attempt to sort any files of its current directory based on its file extension into 1 of 12 newly created directory groupings and also output. To view these groupings and relating outputs, reference the "What is the output?" section.<br><br>
+The script will attempt to sort any files of its current directory based on its file extension into 1 of 12 newly created directory groupings inside of the old directory. To view these groupings and relating outputs, reference the "What is the output?" section.<br><br>
 
 ## How does this run?
 To run this script, simply run the `file_sorter.py` with the argument of `<path_to_dir_to_sort>`. This would look like `python file_sorter.py C:\Users\example_user\Downloads` for a Windows system.<br><br>
