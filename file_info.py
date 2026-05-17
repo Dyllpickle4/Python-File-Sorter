@@ -1,8 +1,6 @@
 import os
 import re
 import shutil
-import stat
-
 
 class FileExtensionGroup:
     """A collection of file extension strings."""
