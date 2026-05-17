@@ -77,16 +77,18 @@ def handle_gui():
 
     window_root = Tk()
     window_root.title('Python File Sorter')
+    py_logo = PhotoImage(file='assets/Python-logo.png')
+    window_root.iconphoto(False, py_logo)
+
     frame = ttk.Frame(window_root, padding=10)
     frame.grid()
-    Label(frame, text='Directory Path', padx=5, justify='center').grid(row=0, column=0)
 
+    Label(frame, text='Directory Path', padx=5, justify='center').grid(row=0, column=0)
     dir_path = StringVar(value=get_dir_path())
     dir_path_entry = Entry(frame, width=50, textvariable=dir_path)
     dir_path_entry.grid(row=0, column=1)
 
     Label(frame, text="Select a Mode", justify='center', pady=5).grid(row=1, column=0)
-
     mode_list = Listbox(frame, height=3, width=12)
     mode_list.grid(row=2, column=0)
     options = ['Move Mode', 'Copy Mode', 'List Mode']
