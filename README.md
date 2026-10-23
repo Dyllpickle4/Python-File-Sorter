@@ -1,5 +1,5 @@
 # Python File Sorter
-This project is a basic file sorter script in Python. It uses only the Python Standard Library and, as such, can be used after installing [Python](https://www.python.org/) itself.<br><br>
+This project is a basic file sorter script in Python v3.14.9. It uses only the Python Standard Library and, as such, can be used after installing [Python](https://www.python.org/) itself.<br><br>
 
 ## What does this do?
 The script will attempt to sort any files of a current working directory based on their file extension. This is into 1 of 12 newly created directory groupings inside of the current working directory. To view these groupings and relating outputs, reference the "What is the output?" section.<br><br>
