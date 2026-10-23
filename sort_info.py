@@ -72,7 +72,7 @@ program_file_group = FileGroup(
         [
             '.exe', '.jar', '.deb', '.msi', '.cmd',
             '.com','.sys', '.app', '.dmg', '.pkg',
-            '.rpm', '.bin', '.apk', '.ipa'
+            '.rpm', '.bin', '.apk', '.ipa', '.iso'
         ]
     )
 )
@@ -83,7 +83,8 @@ editing_file_group = FileGroup(
         [
             '.afdesign', '.afphoto', '.psf', '.psb', '.xcf',
             '.ai', '.cdr', '.fig', '.kra', '.clip', '.rif',
-            '.procreate', '.xmp', '.piskel', '.mlt'
+            '.procreate', '.xmp', '.piskel', '.mlt', '.3mf',
+            '.stl', '.bbmodel'
         ]
     )
 )
@@ -101,7 +102,7 @@ script_file_group = FileGroup(
     FileExtensionGroup(
         'script',
         [
-            '.bat', '.sh', '.py', '.ts', '.rb', '.pl', '.lua'
+            '.bat', '.sh', '.py', '.ts', '.rb', '.pl', '.lua', '.ipynb'
         ]
     )
 )

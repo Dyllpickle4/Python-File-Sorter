@@ -67,6 +67,7 @@ As stated, this program outputs all files moved, or sorted, into new directories
     * .bin
     * .apk
     * .ipa
+    * .iso
 * **Editing Software Save Files (editing_files)**: 
     * .afdesign
     * .afphoto
@@ -83,6 +84,9 @@ As stated, this program outputs all files moved, or sorted, into new directories
     * .xmp
     * .piskel
     * .mlt
+    * .3mf
+    * .stl
+    * .bbmodel
 * **Web-Based Files (web_files)**
     * .html
     * .htm
@@ -97,6 +101,7 @@ As stated, this program outputs all files moved, or sorted, into new directories
     * .rb
     * .pl
     * .lua
+    * .ipynb
 * **Compile-Based Files (code_files)**: 
     * .c
     * .h
